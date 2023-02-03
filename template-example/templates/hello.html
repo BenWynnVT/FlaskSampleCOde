@@ -1,0 +1,14 @@
+<!doctype html>
+<!-- hello.html -->
+<title>Hello from Flask</title>
+{% if name %}
+    <h1>Hello, {{name}}!</h1>
+{% else %}
+    <h1>Hello!</h1>
+{% endif %}
+<h2>Todo List</h2>
+<ul>
+        {% for item in todo_list %}
+               <li>{{item}}</li>
+        {% endfor %}
+    </ul>
