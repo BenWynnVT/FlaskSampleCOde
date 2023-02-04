@@ -6,11 +6,11 @@ app = Flask(__name__)
 
 todo_list = []
 
-@app.route('/remove/', methods=['DELETE'])
-def remove():
-    item = request.form['item']
-    todo_list.remove(item)
-    return redirect('/')
+# @app.route('/remove/', methods=['DELETE'])
+# def remove():
+#     item = request.form['item']
+#     todo_list.remove(item)
+#     return redirect('/')
 
 @app.route('/add/', methods=['POST'])
 def add():
